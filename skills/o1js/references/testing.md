@@ -84,8 +84,8 @@ describe('Counter', () => {
 
 ### Practices
 - **Two modes:**
-  - `proofsEnabled: false` checks all assertions and permissions, and is fast: the 50 tests here take about 10 s.
-  - With proofs, the same suite took about 6 minutes. Run it before deploying and in CI. Some problems only appear when compiling, for example a contract with no methods.
+  - `proofsEnabled: false` checks all assertions and permissions, and is fast: the 62 tests here take about 15 s.
+  - With proofs, the same suite takes about 9 minutes. Run it before deploying and in CI. Some problems only appear when compiling, for example a contract with no methods.
 - **Test the attacks,** not just the happy path:
   - transactions that must fail (`await assert.rejects(...)`, matching the error text);
   - bypass attempts that build account updates by hand ([SimpleToken.test.ts](../examples/token/SimpleToken.test.ts));
