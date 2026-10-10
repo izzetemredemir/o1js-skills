@@ -1,0 +1,12 @@
+{
+  "name": "o1js-skills",
+  "version": "0.1.0",
+  "description": "Write correct, secure o1js 3 zkApps for Mina after the Mesa hard fork. Every claim is backed by tests.",
+  "author": {
+    "name": "izzetemredemir",
+    "url": "https://github.com/izzetemredemir"
+  },
+  "homepage": "https://github.com/izzetemredemir/o1js-skills",
+  "repository": "https://github.com/izzetemredemir/o1js-skills",
+  "license": "MIT"
+}

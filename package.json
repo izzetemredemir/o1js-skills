@@ -1,0 +1,37 @@
+{
+  "name": "o1js-skills",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Agent skill for writing correct o1js v3 zkApps on Mina, with every rule backed by a tested example",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p skills/o1js/examples",
+    "test": "npm run check-links && npm run build && node --test 'build/**/*.test.js'",
+    "test:proofs": "npm run build && PROOFS=1 node --test 'build/**/*.test.js'",
+    "check-links": "node scripts/check-links.mjs"
+  },
+  "engines": {
+    "node": ">=22.19.5"
+  },
+  "dependencies": {
+    "o1js": "3.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "typescript": "5.9.3"
+  },
+  "author": "izzetemredemir",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/izzetemredemir/o1js-skills.git"
+  },
+  "keywords": [
+    "mina",
+    "o1js",
+    "zkapp",
+    "zero-knowledge",
+    "agent-skill",
+    "claude-code"
+  ]
+}

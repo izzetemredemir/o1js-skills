@@ -1,0 +1,15 @@
+{
+  "name": "o1js-skills",
+  "owner": {
+    "name": "izzetemredemir"
+  },
+  "metadata": {
+    "description": "Agent skill for writing correct, secure o1js 3 zkApps on Mina"
+  },
+  "plugins": [
+    {
+      "name": "o1js-skills",
+      "source": "./"
+    }
+  ]
+}
