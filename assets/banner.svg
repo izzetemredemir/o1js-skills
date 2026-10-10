@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+  <title id="title">o1js skill</title>
+  <desc id="desc">A tested agent skill for writing correct, secure o1js 3 zkApps on Mina after the Mesa hard fork.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14121f"/>
+      <stop offset="1" stop-color="#0b0b10"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff7a45"/>
+      <stop offset="1" stop-color="#b06cff"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1280" height="360" rx="24"/></clipPath>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1280" height="360" fill="url(#bg)"/>
+    <rect width="1280" height="360" fill="url(#grid)"/>
+    <rect x="0" y="352" width="1280" height="8" fill="url(#accent)"/>
+  </g>
+
+  <!-- proof mark -->
+  <g transform="translate(1040 92)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="80" cy="88" r="78" stroke="url(#accent)" stroke-width="3" stroke-opacity="0.9"/>
+    <circle cx="80" cy="88" r="56" stroke="#ffffff" stroke-opacity="0.12" stroke-width="2" stroke-dasharray="4 8"/>
+    <path d="M52 90 L72 110 L110 66" stroke="#ffffff" stroke-width="8"/>
+  </g>
+
+  <g font-family="ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="72" y="118" fill="#ffffff" font-size="68" font-weight="700" letter-spacing="-1.5">o1js skill</text>
+    <text x="72" y="168" fill="#c9c6d8" font-size="28" font-weight="400">Agent skill for writing correct, secure zkApps on Mina</text>
+    <text x="72" y="206" fill="#c9c6d8" font-size="28" font-weight="400">with o1js 3, after the Mesa hard fork.</text>
+
+    <g font-size="20" font-weight="600">
+      <rect x="72" y="248" width="164" height="44" rx="22" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.14"/>
+      <text x="154" y="277" fill="#ffffff" text-anchor="middle">test-backed</text>
+
+      <rect x="252" y="248" width="164" height="44" rx="22" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.14"/>
+      <text x="334" y="277" fill="#ffffff" text-anchor="middle">o1js 3.1.0</text>
+
+      <rect x="432" y="248" width="196" height="44" rx="22" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.14"/>
+      <text x="530" y="277" fill="#ffffff" text-anchor="middle">audit-sourced</text>
+
+      <rect x="644" y="248" width="244" height="44" rx="22" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.14"/>
+      <text x="766" y="277" fill="#ffffff" text-anchor="middle">evaluated on 3 models</text>
+    </g>
+  </g>
+</svg>

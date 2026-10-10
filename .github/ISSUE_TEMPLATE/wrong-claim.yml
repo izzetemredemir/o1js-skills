@@ -1,0 +1,26 @@
+name: Wrong or outdated claim
+description: The skill says something that o1js doesn't do.
+labels: [correction]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Where
+      description: File and line, or a quote of the claim.
+      placeholder: references/transactions.md — "fee is in nanomina"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What o1js actually does
+      description: Ideally a minimal snippet or a failing test.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: o1js version
+      placeholder: 3.1.0
+    validations:
+      required: true

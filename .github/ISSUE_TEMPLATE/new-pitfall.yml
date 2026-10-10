@@ -1,0 +1,23 @@
+name: New pitfall
+description: A mistake developers or AI assistants make in o1js that the skill should warn about.
+labels: [pitfall]
+body:
+  - type: textarea
+    id: wrong
+    attributes:
+      label: Wrong pattern
+      render: ts
+    validations:
+      required: true
+  - type: textarea
+    id: right
+    attributes:
+      label: Fix
+      render: ts
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: Audit finding, o1js issue, or how you reproduced it.
