@@ -21,7 +21,7 @@
 An agent skill that teaches AI coding assistants (Claude Code, Codex, Cursor and others that read `SKILL.md`) to write correct, secure **o1js 3** code for **Mina** zkApps after the **Mesa** hard fork.
 
 > [!IMPORTANT]
-> In our evaluation, Claude Sonnet without the skill wrote a token that compiled and passed its own tests, and a stranger then minted 1,000,000 of it. With the skill, the same attack was rejected. [Details](eval/README.md)
+> In our evaluation, Claude Sonnet without the skill wrote a token that compiled and passed its own tests, and a stranger then minted 1,000,000 of it. With the skill, Sonnet set `access: proof()` (its version didn't compile), and Haiku's token rejected the same attack. [Details](eval/README.md)
 
 ## Install
 
@@ -82,7 +82,7 @@ o1js 3.0 and 3.1 shipped in August and September 2026, alongside the Mesa hard f
 
 | Task | Without the skill | With the skill |
 |---|---|---|
-| Token (Sonnet) | Compiles, passes its own tests, **a stranger mints 1,000,000** | `access: proof()`; the attack fails |
+| Token (Sonnet) | Compiles, passes its own tests, **a stranger mints 1,000,000** | `access: proof()`, but 2 compile errors, so the attack wasn't run |
 | Token (Haiku) | 6 compile errors; the contract key can mint | Compiles, tests pass, attack rejected |
 | Mainnet upgrade (Haiku) | **Signs for devnet**; would be rejected on mainnet | Correct network, signed key update, asks before sending |
 | Mainnet upgrade (Sonnet, Haiku) | Refuse to upgrade locked contracts that Mesa allows | Handle Mesa's permission fallback correctly |
